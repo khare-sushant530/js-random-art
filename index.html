@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            background: linear-gradient(180deg, #000000 0%, #00e5ff 100%);
+            font-family: Arial, sans-serif;
+        }
+
+        main,
+        section {
+            position: relative;
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        main {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(180deg, #b3ecff 0%, #00cfff 100%);
+        }
+
+        /* shared button style */
+        #btn,
+        #btn1 {
+            padding: 18px 36px;
+            font-size: 24px;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            position: relative;
+            z-index: 9;
+        }
+
+        #btn {
+            background-color: cornflowerblue;
+        }
+
+        #btn1 {
+            background-color: royalblue;
+        }
+        #btn:active,
+        #btn1:active {
+            scale: 0.85;
+        }
+    </style>
+    <main>
+        <button id="btn">Click me and Boom </button>
+    </main>
+    <section>
+        <button id="btn1">Click me and Boom </button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

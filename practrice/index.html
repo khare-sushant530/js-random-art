@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <style>
+        html,
+        body {
+            height: 100%;
+            background: linear-gradient(360deg, red 10%, blue 100%);
+
+        }
+        main {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #btn {
+            padding: 20px 30px;
+            color: white;
+            font-size: 25px;
+
+            scale: 0.95;
+            cursor: pointer;
+            /* element not flote but have similar powers lke absolute*/
+            position:relative;
+            z-index: 9;
+            background-color: cornflowerblue;
+        }
+    </style>
+    <main>
+        <button id="btn">Click me</button>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
